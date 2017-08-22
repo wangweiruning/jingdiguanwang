@@ -67,6 +67,7 @@
 }
 .header .h-main .h-m-nav ul li a:hover{
     color:#A7C31E;
+    background:#ddd;
 }
 .header .h-main .h-m-nav .list2 li.more .more-hide{
     display:none;
