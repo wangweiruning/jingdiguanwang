@@ -119,6 +119,9 @@
         display:block;
 
     }
+    .footer{
+    	    background: radial-gradient(rgb(0,173,239),rgb(0,121,172));
+    }
 }
 @media all and (max-width: 900px) and (min-width: 600px){
     .header .h-main{

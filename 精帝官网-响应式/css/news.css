@@ -132,7 +132,7 @@
 }
 .footer{
     width:100%;
-    height:80px;
+    height:80px;background: radial-gradient(rgb(0,173,239),rgb(0,121,172));
 }
 .footer .border{
     width:80%;

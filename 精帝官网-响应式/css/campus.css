@@ -3,21 +3,87 @@
 }
 .content .part1{
     position:relative;
-    background:url("../img/campus/bg1.jpg")center center/cover;
+    background:url("../img/campus/bg2 (2).jpg")center center/cover;
     color:#fff;
 }
 .part1 .title{
-    width:280px;
+	position: absolute;
+	top:0px;
+    width:100%;
     height: 120px;
     padding: 15% 0 0 25%;
+   
 }
+
 .part1 .title .p1{
+	position:absolute;
     font-size: 40px;
+     animation: myfirst 1s linear 2s  alternate;
+/* Firefox: */
+-moz-animation: myfirst 1s linear 2s  alternate;
+/* Safari 和 Chrome: */
+-webkit-animation: myfirst 1s linear 2s  alternate;
+/* Opera: */
+-o-animation: myfirst 1s linear 2s  alternate;
+ opacity: 1;
 }
+/*动画开始*/
+@keyframes myfirst
+{
+from {opacity: 0;
+left:0;
+top:0;
+color: #000000;
+transform:rotate(0deg);
+-ms-transform:rotate(0deg); 	/* IE 9 */
+-moz-transform:rotate(0deg); 	/* Firefox */
+-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+-o-transform:rotate(0deg); 	/* Opera */}
+to {opacity: 1;
+color: #fff;
+left:50%;
+top: 50%;
+transform:rotate(360deg);
+-ms-transform:rotate(360deg); 	/* IE 9 */
+-moz-transform:rotate(360deg); 	/* Firefox */
+-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+-o-transform:rotate(360deg); 	/* Opera */}
+}
+
 .part1 .title .p2{
+	position: absolute;
+	top: 90%;
     float: right;
     line-height: 40px;
     font-size: 18px;
+    animation: mytwo 1s ease-in 2s  alternate;
+/* Firefox: */
+-moz-animation: mytwo 1s  ease-in 2s  alternate;
+/* Safari 和 Chrome: */
+-webkit-animation: mytwo 1s  ease-in 2s  alternate;
+/* Opera: */
+-o-animation: mytwo 1s  ease-in 2s  alternate;
+}
+@keyframes mytwo
+{
+from {
+right:0;
+bottom:0;
+color: #000000;
+transform:rotate(0deg);
+-ms-transform:rotate(0deg); 	/* IE 9 */
+-moz-transform:rotate(0deg); 	/* Firefox */
+-webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+-o-transform:rotate(0deg); 	/* Opera */}
+to {opacity: 1;
+color: #fff;
+right:50%;
+bottom: 10%;
+transform:rotate(720deg);
+-ms-transform:rotate(720deg); 	/* IE 9 */
+-moz-transform:rotate(720deg); 	/* Firefox */
+-webkit-transform:rotate(720deg); /* Safari 和 Chrome */
+-o-transform:rotate(720deg); 	/* Opera */}
 }
 .part1 .bottom{
     position: absolute;
@@ -49,7 +115,7 @@
     background-attachment: fixed;
 }
 .content .bg1{
-    background-image: url('../img/campus/bg2.jpg');
+    background-image: url('../img/campus/bg1 (2).jpg');
 }
 .content .part2{
     position: relative;
@@ -115,7 +181,7 @@
     position:relative;
     width:100%;
     height:530px;
-    background:#f0f2f5;
+    background:lightgrey;
 }
 .part3 .wrap .first{
     float:right;
@@ -202,7 +268,7 @@
     bottom:-23px;
 }
 .content .bg3{
-    background-image:url("../img/campus/bg4.jpg")
+    background-image:url("../img/campus/bg22.jpg")
 }
 .part4 .wrap .first{
     float:left;
@@ -252,7 +318,7 @@
     to{transform: rotate(360deg);transform-origin:26% 67%;}
 }
 .content .bg4{
-    background-image:url("../img/campus/bg5.jpg")
+    background-image:url("../img/campus/pic3.jpg")
 }
 .part5 .wrap .first{
     float: right;
@@ -289,7 +355,7 @@
     to{transform: rotate(360deg) translate(0,0)}
 }
 .content .bg5{
-    background-image:url("../img/campus/bg6.jpg")
+    background-image:url("../img/campus/Zmm.jpg")
 }
 .part6 .wrap .first{
     float:left;
@@ -348,3 +414,6 @@
     text-align: center;
     margin-left:40px;
 }
+
+
+#canvas{width: 100%; height: 100%;opacity:0.5;}
