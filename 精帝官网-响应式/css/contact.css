@@ -11,6 +11,7 @@
 	background: -moz-linear-gradient(left, #FF000F, #F9F900);
 	background: -o-linear-gradient(left, #FF000F, #F9F900);
 	background: linear-gradient(left, #FF000F, #F9F900);
+	background-color:lightslategray;
 }
 .top .t-bg .bg-title{
     max-width: 520px;
