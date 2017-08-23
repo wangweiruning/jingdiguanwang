@@ -4,6 +4,6 @@
 (function(){
     var $more = $('.header .more');
     $more.click(function(){
-        $(this).find('.more-hide').toggle();
+        $(this).find('.more-hide').show();
     });
 })();

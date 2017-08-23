@@ -11,35 +11,35 @@ window.onload = function () {
     var arrLeft = document.getElementById("arrLeft");
     var config = [
         {
-            width: 400,
+            width: 200,
             top: 20,
             left: 50,
             opacity: 0.2,
             zIndex: 2
         },//0
         {
-            width: 600,
+            width: 400,
             top: 70,
             left: 0,
             opacity: 0.8,
             zIndex: 3
         },//1
         {
-            width: 800,
+            width: 600,
             top: 100,
             left: 200,
             opacity: 1,
             zIndex: 4
         },//2
         {
-            width: 600,
+            width: 400,
             top: 70,
             left: 600,
             opacity: 0.8,
             zIndex: 3
         },//3
         {
-            width: 400,
+            width: 200,
             top: 20,
             left: 750,
             opacity: 0.2,

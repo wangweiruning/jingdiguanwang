@@ -28,7 +28,7 @@
                      olLis[j].className = "";  // 所有的都要清空
                  }
                  this.className = "current";
-                 animate(ul,-this.index*1920)
+                 animate(ul,-this.index *  document.documentElement.clientWidth)
 
                  square = key = this.index;  // 当前的索引号为主
              }
@@ -45,7 +45,7 @@
                   ul.style.left = 0;  // 迅速调回
                   key = 1;  // 因为第6张就是第一张  第6张播放 
               }
-              animate(ul,-key*1920);  // 再执行
+              animate(ul,-key*  document.documentElement.clientWidth);  // 再执行
       
               square++;
               if(square > olLis.length -1)

@@ -1,0 +1,63 @@
+@media screen and (min-width: 1025px)
+.rich_media {
+    position: relative;
+}
+@media screen and (min-width: 1024px)
+.rich_media {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 1025px)
+.rich_media {
+    position: relative;
+}
+@media screen and (min-width: 1024px)
+.rich_media {
+    width: 740px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rich_media {
+	
+	padding:140px 0;
+	text-align: center;
+	background: url(../img/index/bg.png) no-repeat center center/cover;
+}
+#news{
+	width:60%;
+	margin:0 auto;
+	/*border:1px solid gray;*/
+	
+}
+body{
+	overflow-x: hidden;
+}
+#news img{
+	width:80%;
+}
+#news h1{
+	font-family: "微软雅黑";
+	font-size: 24px;
+	font-weight: 900;
+	text-align: left;
+	line-height: 48px;
+}
+#news .h_one{
+	text-align: left;
+	font-size: 20px;
+	
+}
+#news .h_one a{
+	color:dimgray;
+}
+#news .h_two{
+    padding-top:20px;
+    text-align: left;
+    line-height: 25px;	
+    text-indent: 2rem;
+}
+.pic2{
+	padding-top:20px
+}

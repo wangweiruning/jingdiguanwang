@@ -24,10 +24,10 @@
 }
 .top .video{
     position: absolute;
-    width: 800px;
+    /*width: 800px;
     height: 500px;
     top:-150px;
-    left:150%;
+    left:150%;*/
 }
  .video video{
     object-fit:fill;

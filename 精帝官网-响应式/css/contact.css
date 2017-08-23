@@ -7,7 +7,6 @@
 }
 .top .t-bg{
     height:650px;
-	background: -webkit-gradient(linear, 0 0, 100% 0, from(#FF00F), to(#F9F900));
 	background: -webkit-linear-gradient(left, #FF000F, #F9F900);
 	background: -moz-linear-gradient(left, #FF000F, #F9F900);
 	background: -o-linear-gradient(left, #FF000F, #F9F900);

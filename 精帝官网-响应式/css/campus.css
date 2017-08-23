@@ -149,22 +149,18 @@ transform:rotate(720deg);
     position: absolute;
     right: 0;
     overflow: hidden;
-    width:530px;
+    width:400px;
     height: 100%;
 }
 .part2 .wrap .right p{
     position:absolute;
     top:50%;
     right: 0;
-    transform: rotate(0deg) translate(0,-50%);
+    transform-origin:top center;
+    animation: round 20s linear infinite;
 }
 .part2 .wrap .right p img{
     display:block;
-}
-.part2 .wrap .right .p2{
-    right: 32px;
-    transform-origin:top center;
-    animation: round 20s linear infinite;
 }
 @keyframes round {
     from{transform: rotate(0deg) translate(0,-50%)}
