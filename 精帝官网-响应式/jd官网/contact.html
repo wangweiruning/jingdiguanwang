@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="weiweiruning">
+    <meta name="keywords" content="精帝 科技  网络">
+    <meta name="description" content="精帝科技有限公司">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>精帝科技-联系我们</title>
+    <link rel="icon" href="img/fiv1.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contactMedia.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.2"></script>
+</head>
+<body>
+    <!--header Start-->
+      <div class="header">
+        <div class="h-main">
+            <div class="logo"><a href="../index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="h-m-nav">
+                <ul class="list1">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="campus.html">移动平台</a></li>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li><a href="news.html">公司动态</a></li>
+                    <li><a href="join.html">招贤纳士</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <ul class="list2">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="campus.html">移动平台</a></li>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li class="more" onselectstart="return false">更多 <img src="img/index/nav_icon.png" alt="">
+                        <div class="more-hide">
+                            <ul>
+                                <li><a href="news.html">行业新闻</a></li>
+                                <li><a href="join.html">招贤纳士</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li><a href="../index.html">精帝科技</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--ENd header-->
+    <div class="top">
+        <div class="t-bg">
+            <div class="bg-title">
+                <span style="color: #000;font-size: 24PX">CONTACT US</span>
+                <p>期待您的联系</p>
+            </div>
+            <div class="bg-wx">
+                <div class="wx-img">
+                    <img src="img/contact/wx.jpg" alt="">
+                </div>
+                <p>打开钉钉，扫描二维码关注我们</p>
+            </div>
+            <ul>
+                <li class="bg-email">
+                    <div class="li-bg">
+                        <img src="img/contact/bg_email.png" alt="">
+                    </div>
+                    <span>service@lantunet.com</span>
+                </li>
+                <li class="bg-phone">
+                    <div class="li-bg">
+                        <img src="img/contact/bg_phone.png" alt="">
+                    </div>
+                    <span style="text-align: center">
+                        156-8560-7534
+                    </span>
+                </li>
+                <li class="bg-location">
+                    <div class="li-bg">
+                        <img src="img/contact/bg_location.png" alt="">
+                    </div>
+                    <span>杭州西湖国贸大厦</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="title">
+            <span style="color:#000;font-size: 30px;border-bottom: 5PX solid red">BUS ROOTES</span>
+            <p>乘车路线大致方向</p>
+        </div>
+        <div class="c-main">
+            <ul>
+                <li class="bus">
+                    <div class="bg">
+                        <img src="img/contact/ct_bus.png" alt="">
+                    </div>
+                    <span>地铁2号线到地铁1号线、地铁2号线到528路、140路、100路到城站下</span>
+                </li>
+                <li class="metro">
+                    <div class="bg">
+                        <img src="img/contact/ct_subway.png" alt="">
+                    </div>
+                    <span>乘坐地铁一号线在城站下车，地铁D出口</span>
+                </li>
+                <li class="search">
+                    <div class="bg">
+                        <img src="img/contact/ct_search.png" alt="">
+                    </div>
+                    <span>搜索杭州西湖国贸大厦</span>
+                </li>
+            </ul>
+        </div>
+<div id="container" style="width:60%;height:400px;margin:0 auto"></div>  
+<script type="text/javascript">  
+        var map = new BMap.Map("container");          // 创建地图实例 
+        //通过经纬度坐标来初始化地图
+        var point = new BMap.Point(120.186682,30.250136);  // 创建点坐标(杭州精帝科技有限公司) 
+        map.centerAndZoom(point, 15);                 // 初始化地图，设置中心点坐标和地图级别 
+        //通过城市名称来初始化地图
+        map.centerAndZoom("杭州");
+        var marker = new BMap.Marker(point);        // 创建标注  
+        map.addOverlay(marker); 
+        map.enableScrollWheelZoom();  // 开启鼠标滚轮缩放  
+        map.enableKeyboard();         // 开启键盘控制  
+        map.enableContinuousZoom();   // 开启连续缩放效果  
+        map.enableInertialDragging(); // 开启惯性拖拽效果
+        map.addControl(new BMap.NavigationControl()); //添加标准地图控件(左上角的放大缩小左右拖拽控件)
+        map.addControl(new BMap.ScaleControl());      //添加比例尺控件(左下角显示的比例尺控件)
+        map.addControl(new BMap.OverviewMapControl()); // 缩略图控件
+        map.addControl(new BMap.MapTypeControl());     //// 仅当设置城市信息时，MapTypeControl的切换功能才能可用map.setCurrentCity("杭州");  
+        map.setCurrentCity("杭州市");
+        //添加自定义控件
+        // 定义一个控件类，即function  
+        function ZoomControl(){  
+          // 设置默认停靠位置和偏移量  
+          this.defaultAnchor = BMAP_ANCHOR_TOP_LEFT;  
+          this.defaultOffset = new BMap.Size(50, 10);  
+        }  
+        // 通过JavaScript的prototype属性继承于BMap.Control  
+        ZoomControl.prototype = new BMap.Control(); 
+        // 自定义控件必须实现initialize方法，并且将控件的DOM元素返回  
+        // 在本方法中创建个div元素作为控件的容器，并将其添加到地图容器中  
+        ZoomControl.prototype.initialize = function(map){  
+          // 创建一个DOM元素  
+            var contral = document.getElementById("container");
+            var div = document.createElement("div");  
+          // 添加文字说明  
+          contral.appendChild(div);
+          div.appendChild(document.createTextNode("杭州精帝科技有限公司"));  
+          // 设置样式  
+          div.style.cursor = "pointer";  
+          div.style.border = "1px solid gray";  
+          div.style.backgroundColor = "white";  
+          // 绑定事件，点击一次放大两级  
+          div.onclick = function(e){  
+            alert("杭州精帝科技有限公司");
+          }  
+          // 添加DOM元素到地图中  
+
+          map.getContainer().appendChild(div);  
+          // 将DOM元素返回  
+          return div;  
+        } 
+
+            // 创建控件实例  
+            var myZoomCtrl = new ZoomControl();  
+            // 添加到地图当中  
+            map.addControl(myZoomCtrl); 
+        //添加信息窗口
+        var opts = {  
+          width : 200,     // 信息窗口宽度  
+          height: 70,     // 信息窗口高度  
+          title : "杭州西湖国贸大厦"  // 信息窗口标题  
+        }  
+        var infoWindow = new BMap.InfoWindow("您好，欢迎来到杭州精帝科技有限公司", opts);  // 创建信息窗口对象  
+        map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+</script>    
+    </div> 
+     <!-- footer Start-->
+    <div class="footer">
+        <div class="border"></div>
+        <div class="f-p">
+            <p class="p1">备案号：浙备14025447号-1</p>
+            <p class="p2">©2015-2018 版权所有</p>
+            <p class="p3">精帝科技有限公司</p>
+        </div>
+    </div>
+    <!--End footer-->
+
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

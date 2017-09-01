@@ -1,0 +1,44 @@
+.wrap{
+    width:100%;
+    margin:20px auto;
+}
+.slide {
+    height:500px;
+    position: relative;
+}
+.slide ul{
+	position:absolute;
+	left: 20%;
+}
+.slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slide li img{
+    width:100%;
+}
+.arrow{
+    opacity: 0;
+}
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url(../img/index/prev.png) no-repeat;
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url(../img/index/next.png);
+}
+
+
+
+
+
+
+
+

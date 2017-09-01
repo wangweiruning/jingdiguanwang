@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="weiweiruning">
+    <meta name="keywords" content="精帝 科技  网络">
+    <meta name="description" content="精帝科技有限公司">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>精帝科技-移动校园</title>
+    <link rel="icon" href="img/fiv1.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/campus.css">
+    <link rel="stylesheet" href="css/campusMedia.css">
+    <script type='text/javascript' src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body style="overflow-x:hidden">
+    <!--header Start-->
+    <div class="header">
+        <div class="h-main">
+            <div class="logo"><a href="../index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="h-m-nav">
+                <ul class="list1">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="campus.html">移动平台</a></li>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li><a href="news.html">公司动态</a></li>
+                    <li><a href="join.html">招贤纳士</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+                <ul class="list2">
+                    <li class="active"><a href="../index.html">首页</a></li>
+                    <li><a href="campus.html">移动平台</a></li>
+                    <li><a href="case.html">经典案例</a></li>
+                    <li class="more" onselectstart="return false">更多 <img src="img/index/nav_icon.png" alt="">
+                        <div class="more-hide">
+                            <ul>
+                                <li><a href="news.html">行业新闻</a></li>
+                                <li><a href="join.html">招贤纳士</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li><a href="../index.html">精帝科技</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--ENd header-->
+    <!--content Start-->
+    <div class="content">
+    	<!--cnavas画星空开始-->
+        <div class="part part1">
+        	<canvas id="canvas"></canvas>
+    	<script>
+		var canvas = document.getElementById('canvas'),
+			ctx = canvas.getContext('2d'),
+			w = canvas.width = window.innerWidth,
+			h = canvas.height = window.innerHeight,
+			hue = 217,
+			stars = [],
+			count = 0,
+			maxStars = 1000;
+
+		var canvas2 = document.createElement('canvas'),
+			ctx2 = canvas2.getContext('2d');
+		canvas2.width = 100;
+		canvas2.height = 100;
+		var half = canvas2.width / 2,
+			gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
+		gradient2.addColorStop(0.025, '#fff');
+		gradient2.addColorStop(0.1, 'hsl(' + hue + ', 61%, 33%)');
+		gradient2.addColorStop(0.25, 'hsl(' + hue + ', 64%, 6%)');
+		gradient2.addColorStop(1, 'transparent');
+		ctx2.fillStyle = gradient2;
+		ctx2.beginPath();
+		ctx2.arc(half, half, half, 0, Math.PI * 2);
+		ctx2.fill();
+
+		// End cache
+
+		function random(min, max) {
+			if(arguments.length < 2) {
+				max = min;
+				min = 0;
+			}
+
+			if(min > max) {
+				var hold = max;
+				max = min;
+				min = hold;
+			}
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+
+		var Star = function() {
+			this.orbitRadius = random(w / 2 - 50);
+			this.radius = random(100, this.orbitRadius) / 10;
+			this.orbitX = w / 2;
+			this.orbitY = h / 2;
+			this.timePassed = random(0, maxStars);
+			this.speed = random(this.orbitRadius) / 900000;
+			this.alpha = random(2, 10) / 10;
+			count++;
+			stars[count] = this;
+		}
+		Star.prototype.draw = function() {
+			var x = Math.sin(this.timePassed + 1) * this.orbitRadius + this.orbitX,
+				y = Math.cos(this.timePassed) * this.orbitRadius / 2 + this.orbitY,
+				twinkle = random(10);
+			if(twinkle === 1 && this.alpha > 0) {
+				this.alpha -= 0.05;
+			} else if(twinkle === 2 && this.alpha < 1) {
+				this.alpha += 0.05;
+			}
+
+			ctx.globalAlpha = this.alpha;
+			ctx.drawImage(canvas2, x - this.radius / 2, y - this.radius / 2, this.radius, this.radius);
+			this.timePassed += this.speed;
+		}
+		for(var i = 0; i < maxStars; i++) {
+			new Star();
+		}
+
+		function animation() {
+			ctx.globalCompositeOperation = 'source-over';
+			ctx.globalAlpha = 0.8;
+			ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 1)';
+			ctx.fillRect(0, 0, w, h)
+			ctx.globalCompositeOperation = 'lighter';
+			for(var i = 1, l = stars.length; i < l; i++) {
+				stars[i].draw();
+			};
+			window.requestAnimationFrame(animation);
+		}
+		animation();
+	</script>
+	<!--cnavas画星空结束-->
+	
+            <div class="title">
+                <p class="p1">精帝科技有限公司</p>
+                <p class="p2">—— 我们能做的不仅仅是APP，更是让客户满意的效果</p>
+            </div>
+            <div class="bottom">
+                梳理、提升、准备，我们为您提供一站式的全套服务
+                <p class="btn"></p>
+            </div>
+        </div>
+        <div class="bg bg1"></div>
+        <div class="part part2">
+            <div class="wrap">
+                <div class="left">
+                    <p class="p1">精帝科技有限公司</p>
+                    <p class="p2">国内最有粘性的定制化全新公司</p>
+                    <p class="p3">不只是APP，更是新的网络平台</p>
+                </div>
+                <div class="right">
+                    <p class="p1"><img src="img/campus/taiji.jpg" alt=""></p>
+                </div>
+            </div>
+            <p class="btn"></p>
+        </div>
+        <div class="bg bg2"></div>
+        <div class="part part3">
+            <div class="wrap">
+                <div class="first">
+                    <p class="p1">广大应用群体</p>
+                    <p class="p2">多个独具粘性的独立应用</p>
+                    <p class="p3">真正离不开的一站式系统全套服务</p>
+                </div>
+                <div class="second">
+                    <ul>
+                        <li class="l1"></li>
+                        <li class="l2"></li>
+                        <li class="l3"></li>
+                        <li class="l4"></li>
+                        <li class="l5"></li>
+                        <li class="l6"></li>
+                        <li class="l7"></li>
+                        <li class="l8"></li>
+                        <li class="l9"></li>
+                    </ul>
+                </div>
+                <div class="three">
+                    <ul>
+                        <li class="active"><span>基础服务</span></li>
+                        <li><span></span></li>
+                        <li><span>选择行情</span></li>
+                        <li><span></span></li>
+                        <li><span>科研技术</span></li>
+                        <li><span></span></li>
+                        <li><span>生活服务</span></li>
+                        <li><span></span></li>
+                        <li><span>移动社区</span></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="btn"></p>
+        </div>
+        <div class="bg bg3"></div>
+        <div class="part part4">
+            <div class="wrap">
+                <div class="first">
+                    <p class="p1">独具特色且拥有完善的原生态的系统服务</p>
+                    <p class="p2"> 快速更新迭代，试错响应，全体用户共同参与</p>
+                    <p class="p3">以互联网方式来做系统的服务软件</p>
+                </div>
+                <div class="second">
+                    <p class="p1">
+                        <img src="img/campus/2009.png" alt="" style="width: 80%;position: absolute;left:8%;top:3%">
+                    </p>
+                    <p class="p2">
+                        <img src="img/campus/m7_c.png" alt="">
+                    </p>
+                </div>
+            </div>
+            <p class="btn"></p>
+        </div>
+        <div class="bg bg4"></div>
+        <div class="part part5">
+            <div class="wrap">
+                <div class="first">
+                    <p class="p1">一体化</p>
+                    <p class="p2">对于重复建设，其实我们都是拒绝的~(当然也有例外了)</p>
+                    <p class="p3">更纯粹的多功能跨平台技术</p>
+                </div>
+                <div class="second">
+                    <div class="p5-img" >
+                        <img src="img/campus/23.jpg" alt="" style="border-radius: 70%  50%;">
+                    </div>
+                </div>
+            </div>
+            <p class="btn"></p>
+        </div>
+        <div class="bg bg5"></div>
+        <div class="part part6">
+            <div class="wrap">
+                <div class="first">
+                    <p class="p1">全平台</p>
+                    <p class="p2">一次建设，全面上线</p>
+                    <div class="p3">
+                        <ul>
+                            <li><span>P C</span><img src="img/campus/m11_win.png" alt=""></li>
+                            <li><span>苹果</span><img src="img/campus/m11_ios.png" alt=""></li>
+                            <li><span>安卓</span><img src="img/campus/m11_an.png" alt=""></li>
+                            <li><span>微信</span><img src="img/campus/m11_we.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="second">
+                    <img src="img/campus/m11.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End start-->
+     <!-- footer Start-->
+    <div class="footer">
+        <div class="border"></div>
+        <div class="f-p">
+            <p class="p1">备案号：浙备14025447号-1</p>
+            <p class="p2">©2015-2018 版权所有</p>
+            <p class="p3">精帝科技有限公司</p>
+        </div>
+    </div>
+    <!--End footer-->
+<script type="text/javascript" src="js/campus.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

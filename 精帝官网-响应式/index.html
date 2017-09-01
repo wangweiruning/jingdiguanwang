@@ -7,63 +7,81 @@
     <meta name="description" content="精帝科技有限公司">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
     <title>精帝科技-手机app专业服务商</title>
-    <!--<link rel="icon" href="img/fav.ico">-->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/indexMedia.css">
-    <link rel="stylesheet" href="css/css.css"/>
-   
-    <script type='text/javascript' src="js/jquery-3.1.1.min.js"></script> 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/superslide.2.1.js"></script>
-    <script type="text/javascript" src="js/animate.js"></script>
-    <script type="text/javascript" src="js/0my.js"></script>
-    <style type="text/css">		
-*{margin:0;padding:0;list-style:none;}
-body{background:#fff;font:normal 12px/22px 宋体;width:100%;}
-img{border:0;}
-a{text-decoration:none;color:#333;}
-a:hover{color:#1974A1;}
-/* fullSlide */
-.fullSlide{width:100%;position:relative;height:410px;background:#000;}
-.fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
-.fullSlide .bd ul{width:100% !important;}
-.fullSlide .bd li{width:100% !important;height:410px;overflow:hidden;text-align:center;}
-.fullSlide .bd li a{display:block;height:410px;}
-.fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:30px;line-height:30px;}
-.fullSlide .hd ul{text-align:center;}
-.fullSlide .hd ul li{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:42px;height:11px;margin:1px;overflow:hidden;background:#000;filter:alpha(opacity=50);opacity:0.5;line-height:999px;}
-.fullSlide .hd ul .on{background:#f00;}
-.fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:15%;z-index:1;width:40px;height:60px;background:url(img/index/slider-arrow.png) -126px -137px #000 no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
-.fullSlide .next{left:auto;right:15%;background-position:-6px -137px;}
+    <link rel="icon" href="jd官网/img/fiv1.ico">
+    <link rel="stylesheet" href="jd官网/css/reset.css">
+    <link rel="stylesheet" href="jd官网/css/common.css">
+    <link rel="stylesheet" href="jd官网/css/index.css">
+    <link rel="stylesheet" href="jd官网/css/indexMedia.css"> 
+     <style type="text/css">     
+            /* fullSlide */
+            .fullSlide{width:100%;position:relative;height:410px;background:#000;}
+            .fullSlide .bd{margin:0 auto;position:relative;z-index:0;overflow:hidden;}
+            .fullSlide .bd ul{width:100% !important;}
+            .fullSlide .bd li{width:100% !important;height:410px;overflow:hidden;text-align:center;}
+            .fullSlide .bd li a{display:block;height:410px;}
+            .fullSlide .hd{width:100%;position:absolute;z-index:1;bottom:0;left:0;height:30px;line-height:30px;}
+            .fullSlide .hd ul{text-align:center;}
+            .fullSlide .hd ul li{cursor:pointer;display:inline-block;*display:inline;zoom:1;width:42px;height:11px;margin:1px;overflow:hidden;background:#000;filter:alpha(opacity=50);opacity:0.5;line-height:999px;}
+            .fullSlide .hd ul .on{background:#f00;}
+            .fullSlide .prev,.fullSlide .next{display:block;position:absolute;z-index:1;top:50%;margin-top:-30px;left:15%;z-index:1;width:40px;height:60px;background:url(jd官网/img/index/slider-arrow.png) -126px -137px #000 no-repeat;cursor:pointer;filter:alpha(opacity=50);opacity:0.5;display:none;}
+            .fullSlide .next{left:auto;right:15%;background-position:-6px -137px;}
 </style>
+<link href="jd官网/css/style.css" rel="stylesheet" type="text/css" />
+<link type="text/css" href="jd官网/css/skitter.css" media="all" rel="stylesheet" />
+    <script type='text/javascript' src="jd官网/js/jquery-3.1.1.min.js"></script> 
+    <script type="text/javascript" src="jd官网/js/jquery.js"></script>
+    <script type="text/javascript" src="jd官网/js/superslide.2.1.js"></script>
+    <script type="text/javascript" src="jd官网/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="jd官网/js/jquery.skitter.js"></script>
+    <!-- 首页第二个轮播js代码 -->
+    <script type="text/javascript">
+$(document).ready(function(){
+
+    $(document).ready(function() {
+        $(".box_skitter_large").skitter({
+            animation: "random",
+            interval: 3000,
+            numbers: false, 
+            numbers_align: "right", 
+            hideTools: true,
+            controls: false,
+            focus: false,
+            focus_position: true,
+            width_label:'340px', 
+            enable_navigation_keys: true,   
+            progressbar: false
+        });
+    });               
+                     
+});
+</script>
+<!-- 首页第二个轮播 js代码-->
 </head>
 <body>
     <!--header Start-->
     <div class="header">
         <div class="h-main">
-            <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+            <div class="logo"><a href="index.html"><img src="jd官网/img/logo.png" alt=""></a></div>
             <div class="h-m-nav">
                 <ul class="list1">
                     <li class="active"><a href="index.html">首页</a></li>
-                    <li><a href="campus.html">移动平台</a></li>
-                    <li><a href="case.html">经典案例</a></li>
-                    <li><a href="news.html">公司动态</a></li>
-                    <li><a href="join.html">招贤纳士</a></li>
-                    <li><a href="contact.html">联系我们</a></li>
+                    <li><a href="jd官网/campus.html">移动平台</a></li>
+                    <li><a href="jd官网/case.html">经典案例</a></li>
+                    <li><a href="jd官网/news.html">公司动态</a></li>
+                    <li><a href="jd官网/join.html">招贤纳士</a></li>
+                    <li><a href="jd官网/contact.html">联系我们</a></li>
                 </ul>
                 <ul class="list2">
-                    <li class="active"><a href="index.html">首页</a></li>
-                    <li><a href="campus.html">移动平台</a></li>
-                    <li><a href="case.html">经典案例</a></li>
-                    <li class="more" onselectstart="return false">更多 <img src="img/index/nav_icon.png" alt="" style="margin-top:50%">
+                    <li class="active"><a href="jd官网/index.html">首页</a></li>
+                    <li><a href="jd官网/campus.html">移动平台</a></li>
+                    <li><a href="jd官网/case.html">经典案例</a></li>
+                    <li class="more" onselectstart="return false">更多 <img src="jd官网/img/index/nav_icon.png" alt="" style="margin-top:50%">
                         <div class="more-hide">
                             <ul>
-                                <li><a href="news.html">行业新闻</a></li>
-                                <li><a href="join.html">招贤纳士</a></li>
-                                <li><a href="contact.html">联系我们</a></li>
-                                <li><a href="">精帝科技</a></li>
+                                <li><a href="jd官网/news.html">行业新闻</a></li>
+                                <li><a href="jd官网/join.html">招贤纳士</a></li>
+                                <li><a href="jd官网/contact.html">联系我们</a></li>
+                                <li><a href="index.html">精帝科技</a></li>
                             </ul>
                         </div>
                     </li>
@@ -77,9 +95,9 @@ a:hover{color:#1974A1;}
        <div class="fullSlide">
 	<div class="bd">
 		<ul>
-			<li _src="url(img/index/7adef8522c2ee8bbb47f8f96267f1bff.jpg)" style="background:#DDDDDD center 0 no-repeat;"><a href="#"></a></li>
-			<li _src="url(img/index/shu.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
-			<li _src="url(img/index/3.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(jd官网/img/index/7adef8522c2ee8bbb47f8f96267f1bff.jpg)" style="background:#DDDDDD center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(jd官网/img/index/shu.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(jd官网/img/index/3.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
 			
 		</ul>
 	</div>
@@ -119,21 +137,45 @@ $(".fullSlide").slide({
             <span style="color: #000;font-size: 24PX;text-align: center;">FUNCTION CASES</span>
             <p>经典案例</p>
         </div>
+        <!-- 经典轮播开始 -->
 <div class="wrap" id="wrap">
-    <div class="slide" id="slide">
+   <div id="slider-container">
+    <div class="box_skitter box_skitter_large">
         <ul>
-            <li><a href="javascript:;"><img src="img/index/slidepic1.jpg" alt=""/></a></li>
-            <li><a href="javascript:;"><img src="img/index/slidepic2.jpg" alt=""/></a></li>
-            <li><a href="javascript:;"><img src="img/index/slidepic3.jpg" alt=""/></a></li>
-            <li><a href="javascript:;"><img src="img/index/slidepic4.jpg" alt=""/></a></li>
-            <li><a href="javascript:;"><img src="img/index/slidepic5.jpg" alt=""/></a></li>
+            <li>
+                <a href="javascript:;"><img src="jd官网/img/index/index1.jpg" alt="" /></a>
+                <div class="label_text">
+                    <h3 class="colortext uppercase"> 帮你展现更美的自已
+                    </h3>
+                    <span>彩妆刷系列轻易打造你的个性妆容！夏末天气也越来越舒爽的，</span>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="jd官网/img/index/index2.jpg"alt="" /></a>
+                <div class="label_text">
+                    <h3 class="colortext uppercase">帮你展现更美的自已
+                    </h3>
+                    <span>专业的刷具能帮你轻松打造自然妆容，你会发现用了专业刷具，
+                    </span>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:;"><img src="jd官网/img/index/index3.jpg" alt="" /></a>
+                <div class="label_text">
+                    <h3 class="colortext uppercase">帮你展现更美的自已
+                    </h3>
+                    <span>彩妆刷让你打造美丽妆容更加得心应手。彩妆刷已从专业造型师手中，
+                    </span>
+                </div>
+            </li>
         </ul>
-        <div class="arrow" id="arrow">
-            <a href="javascript:;" class="prev" id="arrLeft"></a>
-            <a href="javascript:;" class="next" id="arrRight"></a>
-        </div>
     </div>
+    <div id="shadow-img-slider"></div>
 </div>
+<!-- end #slider-container -->
+
+</div>
+        <!-- 经典轮播结束 -->
     </div>
     <!--End classic-->
     <!--partner Start-->
@@ -144,9 +186,9 @@ $(".fullSlide").slide({
         </div>
         <div class="p-main">
             <ul>
-                <li><a href="http://www.newcapec.com.cn/"><img src="img/index/rd1.jpg" alt=""></a></li>
-                <li><a href="http://www.h3c.com/cn/"><img src="img/index/rd2.jpg" alt=""></a></li>
-                <li><a href="http://www.cmbchina.com/"><img src="img/index/rd3.jpg" alt=""></a></li>
+                <li><a href="http://www.newcapec.com.cn/"><img src="jd官网/img/index/rd1.jpg" alt=""></a></li>
+                <li><a href="http://www.h3c.com/cn/"><img src="jd官网/img/index/rd2.jpg" alt=""></a></li>
+                <li><a href="http://www.cmbchina.com/"><img src="jd官网/img/index/rd3.jpg" alt=""></a></li>
             </ul>
         </div>
     </div>
@@ -161,7 +203,7 @@ $(".fullSlide").slide({
         </div>
     </div>
     <!--End footer-->
-    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="jd官网/js/common.js"></script>
     <!--<script type="text/javascript" src="js/lunbo_index.js"></script>-->
 </body>
 </html>
