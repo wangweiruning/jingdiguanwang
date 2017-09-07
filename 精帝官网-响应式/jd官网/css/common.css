@@ -106,12 +106,10 @@
         background: #ffffff;
     }
     .header .h-main .logo{
-        float:none;
         width:100%;
         height:45px;
     }
     .header .h-main .logo a{
-        width:132px;
         height:37px;
         padding-top:8px;
         margin:0 auto;

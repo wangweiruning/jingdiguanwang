@@ -18,7 +18,7 @@
 }
 .container{
     width:100%;
-    min-width: 400px;
+    min-width: 320px;
 }
 .container .title{
     max-width: 520px;
@@ -46,13 +46,14 @@
     font-size:16px;
 }
 .container .c-main .c-list{
-    width:520px;
+    width:60%;
     margin:0 auto;
 }
 .container .c-main .c-list p{
     font-size: 20px;
     padding:25px 0;
     color:#2F96C5;
+      margin:0 auto;
 }
 .container .c-main .referral{
     line-height: 40px;

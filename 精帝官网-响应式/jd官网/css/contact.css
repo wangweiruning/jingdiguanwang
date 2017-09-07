@@ -82,7 +82,7 @@
 .container{
     position:relative;
     width:100%;
-    min-width: 400px;
+    min-width: 320px;
 }
 .container .title{
     max-width: 520px;

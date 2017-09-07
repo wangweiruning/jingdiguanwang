@@ -4,12 +4,15 @@
 .box_skitter{position:relative;}
 .box_skitter ul{display:none;margin:0;padding:0}
 .box_skitter ul li{margin:0;padding:0;border:solid 5px #ff9900 !important}
-.box_skitter .container_skitter{overflow:hidden;position:relative;}
-.box_skitter .image{overflow:hidden;}
+.box_skitter .container_skitter{width:100% !important;overflow:hidden;position:relative;
+margin:0 auto;}
+.box_skitter .image{overflow:hidden;width:100%;margin:0 auto;}
 .box_skitter .image img{display:none;}
-
-.box_skitter .box_clone{position:absolute;top:0;left:0;width:100px;overflow:hidden;display:none;z-index:20;}
-.box_skitter .box_clone img{position:absolute;top:0;left:0;z-index:20;}
+.image_main{
+	width:100%;
+}
+.box_skitter .box_clone{position:absolute;top:0;left:0;width:100%;overflow:hidden;display:none;z-index:20;}
+.box_skitter .box_clone img{position:absolute;top:0;left:0;z-index:20;width:100%;}
 
 .box_skitter .prev_button{position:absolute;top:50%;left:35px;z-index:100;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../img/index/prev.png)no-repeat left top;}
 .box_skitter .next_button{position:absolute;top:50%;right:35px;z-index:100;width:42px;height:42px;overflow:hidden;text-indent:-9999em;margin-top:-25px;background:url(../img/index/next.png)no-repeat left top;}
@@ -30,7 +33,7 @@
 .box_skitter .info_slide_dots .image_number{background:#333;float:left;margin:0 5px 0 0;cursor:pointer;-moz-border-radius:50px;-webkit-border-radius:50px;border-radius:50px;width:18px;height:18px;text-indent:-9999em;overflow:hidden;}
 .box_skitter .info_slide_dots .image_number_select{background:#dc6a4d;float:left;margin:0 5px 0 0;}
 
-.box_skitter .label_skitter{z-index:150;position:absolute;bottom:0px;left:0px;display:none;}
+.box_skitter .label_skitter{z-index:150;position:absolute;bottom:0px;left:0px;margin:0 auto;display:none;}
 
 /*.loading{position:absolute;top:50%;right:50%;z-index:10000;margin:-16px -16px;color:#fff;text-indent:-9999em;overflow:hidden;background:url(../img/index/ajax-loader.gif) no-repeat left top;width:32px;height:32px;}*/
 

@@ -39,7 +39,7 @@
 }
 @media all and (max-width: 600px) {
     .top {
-        height: 210px;
+        height: 550px;
     }
 
     .top .t-main {
@@ -49,7 +49,7 @@
     }
 
     .container .c-top {
-        width: 315px;
+        width: 100%;
     }
 
     .container .c-main {
